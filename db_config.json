@@ -1,0 +1,20 @@
+{
+	"Tameen":{
+		"mysql_hostname":"",
+		"mysql_username":"",
+		"mysql_password":"",
+		"mysql_database":""	
+	},
+	"Namita":{
+		"mysql_hostname":"",
+		"mysql_username":"",
+		"mysql_password":"",
+		"mysql_database":""
+	},
+	"Samprit":{
+		"mysql_hostname":"localhost",
+		"mysql_username":"root",
+		"mysql_password":"comic",
+		"mysql_database":"q2a"
+	}
+}

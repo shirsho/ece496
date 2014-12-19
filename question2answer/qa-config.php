@@ -24,6 +24,36 @@
 	More about this license: http://www.question2answer.org/license.php
 */
 
+	/*
+	======================================================================
+	Setting up database configuration for individual developers
+	
+	TODO Could possibly automate this further using environment variables?
+	======================================================================
+	*/
+	$db_config_file = file_get_contents("../db_config.json") or die("Unable to open config.json");
+	$db_config_info = json_decode($db_config_file,true);
+	
+	// Namita, uncomment this for yourself
+	/*	
+	$mysql_hostname = $db_config_info['Namita']["mysql_hostname"];
+	$mysql_username = $db_config_info['Namita']["mysql_username"];
+	$mysql_password = $db_config_info['Namita']["mysql_password"];
+	$mysql_database = $db_config_info['Namita']["mysql_database"];
+	*/
+	// Tameen, uncomment this for yourself
+	/*
+	$mysql_hostname = $db_config_info['Tameen']["mysql_hostname"];
+	$mysql_username = $db_config_info['Tameen']["mysql_username"];
+	$mysql_password = $db_config_info['Tameen']["mysql_password"];
+	$mysql_database = $db_config_info['Tameen']["mysql_database"];
+	*/
+	// Samprit, uncomment this for yourself		
+	$mysql_hostname = $db_config_info['Samprit']["mysql_hostname"];
+	$mysql_username = $db_config_info['Samprit']["mysql_username"];
+	$mysql_password = $db_config_info['Samprit']["mysql_password"];
+	$mysql_database = $db_config_info['Samprit']["mysql_database"];
+	
 /*
 	======================================================================
 	  THE 4 DEFINITIONS BELOW ARE REQUIRED AND MUST BE SET BEFORE USING!
